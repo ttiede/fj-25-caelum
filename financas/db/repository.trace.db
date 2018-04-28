@@ -1,0 +1,15 @@
+04-28 14:51:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Timeout trying to lock table "TB_CONTAS_BANCARIAS"; SQL statement:
+insert into tb_contas_bancarias (id, agencia, banco, numero, titular) values (null, ?, ?, ?, ?) [50200-160]
+04-28 14:52:01 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Timeout trying to lock table "TB_CONTAS_BANCARIAS"; SQL statement:
+insert into tb_contas_bancarias (id, agencia, banco, numero, titular) values (null, ?, ?, ?, ?) [50200-160]
+04-28 14:52:03 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Timeout trying to lock table "TB_CONTAS_BANCARIAS"; SQL statement:
+insert into tb_contas_bancarias (id, agencia, banco, numero, titular) values (null, ?, ?, ?, ?) [50200-160]
+04-28 14:52:05 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Timeout trying to lock table "TB_CONTAS_BANCARIAS"; SQL statement:
+insert into tb_contas_bancarias (id, agencia, banco, numero, titular) values (null, ?, ?, ?, ?) [50200-160]
+04-28 14:52:07 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Timeout trying to lock table "TB_CONTAS_BANCARIAS"; SQL statement:
+insert into tb_contas_bancarias (id, agencia, banco, numero, titular) values (null, ?, ?, ?, ?) [50200-160]

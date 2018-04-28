@@ -2,15 +2,16 @@ package br.com.caelum.financas.teste;
 
 import javax.persistence.EntityManager;
 
-import org.junit.Test;
+import org.junit.Before;
 
 import br.com.caelum.financas.Dao.ContaDao;
 import br.com.caelum.financas.modelo.Conta;
 import br.com.caelum.financas.util.JPAUtil;
 
-public class TestaInsereConta {
-	@Test
-	public void insereConta_sucess() {
+public class MockConta {
+
+	@Before
+	public void createContaToTests() {
 		EntityManager manager = new JPAUtil().getEntityManager();
 		ContaDao dao = new ContaDao(manager);
 		Conta conta = new Conta();

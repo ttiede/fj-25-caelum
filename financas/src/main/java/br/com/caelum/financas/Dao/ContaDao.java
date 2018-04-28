@@ -22,10 +22,15 @@ public class ContaDao {
 		this.manager.remove(conta);
 	}
 
+	public Conta update(Conta conta) {
+		return  this.manager.merge(conta);
+	}
+
 	public Conta busca(Integer id) {
 		return this.manager.find(Conta.class, id);
 	}
 
+	
 	public List<Conta> lista() {
 		return this.manager.createQuery("select	c from Conta c", Conta.class).getResultList();
 	}
