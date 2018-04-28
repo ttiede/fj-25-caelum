@@ -2,12 +2,15 @@ package br.com.caelum.financas.teste;
 
 import javax.persistence.EntityManager;
 
+import org.junit.Test;
+
 import br.com.caelum.financas.Dao.ContaDao;
 import br.com.caelum.financas.modelo.Conta;
 import br.com.caelum.financas.util.JPAUtil;
 
 public class TestaGerenciandoUmaConta {
-	public static void main(String[] args) {
+	@Test
+	public void managerConta_sucess() {
 		// Recupera um EntityManager
 		EntityManager manager = new JPAUtil().getEntityManager();
 		// Chama o DAO passando um EntityManager
