@@ -13,7 +13,6 @@ public class TestaAlteraConta {
 	@Test
 	public void testAlteraConta_success() {
 		EntityManager manager = new JPAUtil().getEntityManager();// recupera um
-																	// EntityManager
 		ContaDao dao = new ContaDao(manager);
 		manager.getTransaction().begin();
 		Conta conta = dao.busca(2); // usar um ID que exista no banco
