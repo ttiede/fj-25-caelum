@@ -1,0 +1,447 @@
+2016-12-29 15:27:04,835 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2016-12-29 15:27:13,320 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-12-29 15:27:14,700 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2016-12-29 15:27:14,710 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-8-oracle/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_91-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_91
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.91-b14
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final
+	jboss.host.name = caelum-22-17
+	jboss.modules.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = caelum-22-17
+	jboss.qualified.host.name = caelum-22-17
+	jboss.server.base.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	jboss.server.config.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log
+	jboss.server.name = caelum-22-17
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.13.0-91-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-8-oracle/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone-ha.xml -Djboss.server.base.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/bin
+	user.home = /home/analosnak
+	user.language = en
+	user.name = analosnak
+	user.timezone = America/Sao_Paulo
+2016-12-29 15:27:14,711 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2016-12-29 15:27:25,116 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found fj25-financas-web.war in deployment directory. To trigger deployment create a file called fj25-financas-web.war.dodeploy
+2016-12-29 15:27:26,126 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-12-29 15:27:26,173 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.4.0.Final
+2016-12-29 15:27:26,210 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.4.0.Final
+2016-12-29 15:27:26,329 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 45) WFLYCLJG0001: Activating JGroups subsystem.
+2016-12-29 15:27:26,337 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 40) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-12-29 15:27:26,356 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 51) WFLYNAM0001: Activating Naming Subsystem
+2016-12-29 15:27:26,358 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 41) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-12-29 15:27:26,341 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-12-29 15:27:26,352 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-12-29 15:27:26,599 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+2016-12-29 15:27:26,617 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 58) WFLYSEC0002: Activating Security Subsystem
+2016-12-29 15:27:26,683 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2016-12-29 15:27:26,967 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2016-12-29 15:27:27,855 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 1.4.0.Final starting
+2016-12-29 15:27:28,378 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-12-29 15:27:29,094 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-12-29 15:27:29,101 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-12-29 15:27:29,379 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2016-12-29 15:27:29,387 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2016-12-29 15:27:29,484 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2016-12-29 15:27:29,485 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = com.mysql
+2016-12-29 15:27:29,625 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2016-12-29 15:27:29,633 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-12-29 15:27:29,639 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 4.0.21.Final
+2016-12-29 15:27:30,249 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2016-12-29 15:27:30,249 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2016-12-29 15:27:30,432 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-12-29 15:27:30,433 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8009
+2016-12-29 15:27:30,552 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000001: Initializing mod_cluster version 1.3.3.Final
+2016-12-29 15:27:30,700 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2016-12-29 15:27:31,497 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-12-29 15:27:31,579 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/fj25DS]
+2016-12-29 15:27:31,669 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2016-12-29 15:27:32,599 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/deployments
+2016-12-29 15:27:32,736 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "fj25-financas-web.war" (runtime-name: "fj25-financas-web.war")
+2016-12-29 15:27:35,362 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2016-12-29 15:27:38,956 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2016-12-29 15:27:42,815 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for controlefinancas
+2016-12-29 15:27:46,251 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.hibernate.search.engine:main") which may be changed or removed in future versions without notice.
+2016-12-29 15:27:46,252 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-8) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.apache.lucene:main") which may be changed or removed in future versions without notice.
+2016-12-29 15:27:46,508 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 64) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'fj25-financas-web.war#controlefinancas'
+2016-12-29 15:27:46,695 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 64) HHH000204: Processing PersistenceUnitInfo [
+	name: controlefinancas
+	...]
+2016-12-29 15:27:47,674 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment fj25-financas-web.war
+2016-12-29 15:27:48,080 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 64) HHH000412: Hibernate Core {5.0.10.Final}
+2016-12-29 15:27:48,082 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 64) HHH000206: hibernate.properties not found
+2016-12-29 15:27:48,099 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 64) HHH000021: Bytecode provider name : javassist
+2016-12-29 15:27:48,580 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 64) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-12-29 15:27:48,809 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 5.2.4.Final
+2016-12-29 15:27:49,576 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'ContaDao' in deployment unit 'deployment "fj25-financas-web.war"' are as follows:
+
+	java:global/fj25-financas-web/ContaDao!br.com.caelum.financas.dao.ContaDao
+	java:app/fj25-financas-web/ContaDao!br.com.caelum.financas.dao.ContaDao
+	java:module/ContaDao!br.com.caelum.financas.dao.ContaDao
+	java:global/fj25-financas-web/ContaDao
+	java:app/fj25-financas-web/ContaDao
+	java:module/ContaDao
+
+2016-12-29 15:27:50,615 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 2.3.5 (Final)
+2016-12-29 15:27:52,675 WARN  [org.jgroups.protocols.UDP] (MSC service thread 1-8) JGRP000015: the send buffer of socket ManagedMulticastSocketBinding was set to 1MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+2016-12-29 15:27:52,678 WARN  [org.jgroups.protocols.UDP] (MSC service thread 1-8) JGRP000015: the receive buffer of socket ManagedMulticastSocketBinding was set to 20MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2016-12-29 15:27:52,678 WARN  [org.jgroups.protocols.UDP] (MSC service thread 1-8) JGRP000015: the send buffer of socket ManagedMulticastSocketBinding was set to 1MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+2016-12-29 15:27:52,678 WARN  [org.jgroups.protocols.UDP] (MSC service thread 1-8) JGRP000015: the receive buffer of socket ManagedMulticastSocketBinding was set to 25MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2016-12-29 15:27:54,691 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 64) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'fj25-financas-web.war#controlefinancas'
+2016-12-29 15:27:58,060 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 64) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2016-12-29 15:27:59,250 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 64) Envers integration enabled? : true
+2016-12-29 15:28:03,679 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000078: Starting JGroups channel server
+2016-12-29 15:28:03,679 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000078: Starting JGroups channel ejb
+2016-12-29 15:28:03,679 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000078: Starting JGroups channel hibernate
+2016-12-29 15:28:03,679 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000078: Starting JGroups channel web
+2016-12-29 15:28:03,978 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000094: Received new cluster view for channel ejb: [caelum-22-17|0] (1) [caelum-22-17]
+2016-12-29 15:28:03,978 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000094: Received new cluster view for channel server: [caelum-22-17|0] (1) [caelum-22-17]
+2016-12-29 15:28:03,979 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000094: Received new cluster view for channel web: [caelum-22-17|0] (1) [caelum-22-17]
+2016-12-29 15:28:03,981 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000094: Received new cluster view for channel hibernate: [caelum-22-17|0] (1) [caelum-22-17]
+2016-12-29 15:28:04,013 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000079: Channel ejb local address is caelum-22-17, physical addresses are [127.0.0.1:55200]
+2016-12-29 15:28:04,013 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000079: Channel web local address is caelum-22-17, physical addresses are [127.0.0.1:55200]
+2016-12-29 15:28:04,013 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000079: Channel server local address is caelum-22-17, physical addresses are [127.0.0.1:55200]
+2016-12-29 15:28:04,013 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000079: Channel hibernate local address is caelum-22-17, physical addresses are [127.0.0.1:55200]
+2016-12-29 15:28:04,220 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2016-12-29 15:28:04,840 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 68) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:28:04,841 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 73) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:28:04,842 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 68) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:28:04,843 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 73) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:28:04,843 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 68) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:28:04,841 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 72) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:28:04,844 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 68) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:28:04,844 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 72) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:28:06,283 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 68) WFLYCLINF0002: Started client-mappings cache from ejb container
+2016-12-29 15:28:07,631 INFO  [org.hibernate.search.engine.Version] (ServerService Thread Pool -- 64) HSEARCH000034: Hibernate Search 5.5.4.Final
+2016-12-29 15:28:09,572 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 64) HHH000228: Running hbm2ddl schema update
+2016-12-29 15:28:11,445 WARN  [org.hibernate.search.engine.impl.ConfigContext] (ServerService Thread Pool -- 64) HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified: using LUCENE_CURRENT.
+2016-12-29 15:28:22,305 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 64) Initializing Mojarra 2.2.13.SP1 20160303-1204 for context '/fj25-financas-web'
+2016-12-29 15:28:24,438 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 64) WFLYUT0021: Registered web context: /fj25-financas-web
+2016-12-29 15:28:25,001 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "fj25-financas-web.war" (runtime-name : "fj25-financas-web.war")
+2016-12-29 15:28:25,564 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-12-29 15:28:25,565 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-12-29 15:28:25,565 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 95673ms - Started 523 of 771 services (466 services are lazy, passive or on-demand)
+2016-12-29 15:33:56,301 INFO  [org.jboss.as.server] (management-handler-thread - 6) WFLYSRV0236: Suspending server with no timeout.
+2016-12-29 15:33:56,540 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2016-12-29 15:33:56,815 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000080: Disconnecting JGroups channel web
+2016-12-29 15:33:56,815 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000082: Stopping the RpcDispatcher for channel web
+2016-12-29 15:33:56,815 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000080: Disconnecting JGroups channel hibernate
+2016-12-29 15:33:56,816 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000082: Stopping the RpcDispatcher for channel hibernate
+2016-12-29 15:33:56,816 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000080: Disconnecting JGroups channel server
+2016-12-29 15:33:56,816 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000082: Stopping the RpcDispatcher for channel server
+2016-12-29 15:33:56,925 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0022: Unregistered web context: /fj25-financas-web
+2016-12-29 15:33:57,168 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2016-12-29 15:33:57,183 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000002: Initiating mod_cluster shutdown
+2016-12-29 15:33:57,242 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-12-29 15:33:57,255 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'fj25-financas-web.war#controlefinancas'
+2016-12-29 15:33:57,268 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'fj25-financas-web.war#controlefinancas'
+2016-12-29 15:33:57,271 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:/fj25DS]
+2016-12-29 15:33:57,287 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-12-29 15:33:57,288 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2016-12-29 15:33:57,289 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow AJP listener ajp suspending
+2016-12-29 15:33:57,290 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.1:8009
+2016-12-29 15:33:57,290 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2016-12-29 15:33:57,291 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment fj25-financas-web.war (runtime-name: fj25-financas-web.war) in 604ms
+2016-12-29 15:33:57,380 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = com.mysql
+2016-12-29 15:33:57,542 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2016-12-29 15:33:57,544 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2016-12-29 15:33:57,698 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2016-12-29 15:33:57,702 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000080: Disconnecting JGroups channel ejb
+2016-12-29 15:33:57,702 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000082: Stopping the RpcDispatcher for channel ejb
+2016-12-29 15:33:57,748 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 1.4.0.Final stopping
+2016-12-29 15:33:57,973 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 1240ms
+2016-12-29 15:34:04,121 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2016-12-29 15:34:06,258 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-12-29 15:34:06,642 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2016-12-29 15:34:06,646 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-8-oracle/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_91-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_91
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.91-b14
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final
+	jboss.host.name = caelum-22-17
+	jboss.modules.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = caelum-22-17
+	jboss.qualified.host.name = caelum-22-17
+	jboss.server.base.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	jboss.server.config.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log
+	jboss.server.name = caelum-22-17
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.13.0-91-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-8-oracle/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone-ha.xml -Djboss.server.base.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/bin
+	user.home = /home/analosnak
+	user.language = en
+	user.name = analosnak
+	user.timezone = America/Sao_Paulo
+2016-12-29 15:34:06,647 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2016-12-29 15:34:13,778 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found fj25-financas-web.war in deployment directory. To trigger deployment create a file called fj25-financas-web.war.dodeploy
+2016-12-29 15:34:14,211 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-12-29 15:34:14,258 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.4.0.Final
+2016-12-29 15:34:14,291 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.4.0.Final
+2016-12-29 15:34:14,396 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 41) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-12-29 15:34:14,424 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 51) WFLYNAM0001: Activating Naming Subsystem
+2016-12-29 15:34:14,572 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 45) WFLYCLJG0001: Activating JGroups subsystem.
+2016-12-29 15:34:14,433 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-12-29 15:34:14,589 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 40) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-12-29 15:34:14,609 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+2016-12-29 15:34:14,608 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-12-29 15:34:14,618 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 58) WFLYSEC0002: Activating Security Subsystem
+2016-12-29 15:34:14,624 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2016-12-29 15:34:14,694 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2016-12-29 15:34:15,182 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 1.4.0.Final starting
+2016-12-29 15:34:16,056 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 4.0.21.Final
+2016-12-29 15:34:16,053 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-12-29 15:34:16,064 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-12-29 15:34:16,259 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2016-12-29 15:34:16,261 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-12-29 15:34:16,389 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2016-12-29 15:34:16,390 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = com.mysql
+2016-12-29 15:34:16,564 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2016-12-29 15:34:16,564 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2016-12-29 15:34:16,623 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-12-29 15:34:16,767 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2016-12-29 15:34:16,771 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2016-12-29 15:34:16,799 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-12-29 15:34:16,961 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:/fj25DS]
+2016-12-29 15:34:17,177 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-12-29 15:34:17,177 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8009
+2016-12-29 15:34:17,184 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000001: Initializing mod_cluster version 1.3.3.Final
+2016-12-29 15:34:17,497 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2016-12-29 15:34:17,500 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2016-12-29 15:34:17,696 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/deployments
+2016-12-29 15:34:17,743 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "fj25-financas-web.war" (runtime-name: "fj25-financas-web.war")
+2016-12-29 15:34:18,579 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2016-12-29 15:34:19,904 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2016-12-29 15:34:20,890 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for controlefinancas
+2016-12-29 15:34:21,546 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.hibernate.search.engine:main") which may be changed or removed in future versions without notice.
+2016-12-29 15:34:21,546 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.apache.lucene:main") which may be changed or removed in future versions without notice.
+2016-12-29 15:34:21,610 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 64) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'fj25-financas-web.war#controlefinancas'
+2016-12-29 15:34:21,866 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 64) HHH000204: Processing PersistenceUnitInfo [
+	name: controlefinancas
+	...]
+2016-12-29 15:34:21,956 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment fj25-financas-web.war
+2016-12-29 15:34:22,369 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 5.2.4.Final
+2016-12-29 15:34:22,469 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 64) HHH000412: Hibernate Core {5.0.10.Final}
+2016-12-29 15:34:22,471 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 64) HHH000206: hibernate.properties not found
+2016-12-29 15:34:22,475 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 64) HHH000021: Bytecode provider name : javassist
+2016-12-29 15:34:22,725 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'ContaDao' in deployment unit 'deployment "fj25-financas-web.war"' are as follows:
+
+	java:global/fj25-financas-web/ContaDao!br.com.caelum.financas.dao.ContaDao
+	java:app/fj25-financas-web/ContaDao!br.com.caelum.financas.dao.ContaDao
+	java:module/ContaDao!br.com.caelum.financas.dao.ContaDao
+	java:global/fj25-financas-web/ContaDao
+	java:app/fj25-financas-web/ContaDao
+	java:module/ContaDao
+
+2016-12-29 15:34:22,774 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 64) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-12-29 15:34:23,247 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 2.3.5 (Final)
+2016-12-29 15:34:23,821 WARN  [org.jgroups.protocols.UDP] (MSC service thread 1-1) JGRP000015: the send buffer of socket ManagedMulticastSocketBinding was set to 1MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+2016-12-29 15:34:23,822 WARN  [org.jgroups.protocols.UDP] (MSC service thread 1-1) JGRP000015: the receive buffer of socket ManagedMulticastSocketBinding was set to 20MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2016-12-29 15:34:23,822 WARN  [org.jgroups.protocols.UDP] (MSC service thread 1-1) JGRP000015: the send buffer of socket ManagedMulticastSocketBinding was set to 1MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+2016-12-29 15:34:23,822 WARN  [org.jgroups.protocols.UDP] (MSC service thread 1-1) JGRP000015: the receive buffer of socket ManagedMulticastSocketBinding was set to 25MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2016-12-29 15:34:23,829 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 64) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'fj25-financas-web.war#controlefinancas'
+2016-12-29 15:34:24,028 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 64) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2016-12-29 15:34:24,120 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 64) Envers integration enabled? : true
+2016-12-29 15:34:25,924 INFO  [org.hibernate.search.engine.Version] (ServerService Thread Pool -- 64) HSEARCH000034: Hibernate Search 5.5.4.Final
+2016-12-29 15:34:26,280 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 64) HHH000228: Running hbm2ddl schema update
+2016-12-29 15:34:26,770 WARN  [org.hibernate.search.engine.impl.ConfigContext] (ServerService Thread Pool -- 64) HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified: using LUCENE_CURRENT.
+2016-12-29 15:34:28,243 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000078: Starting JGroups channel hibernate
+2016-12-29 15:34:28,246 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000078: Starting JGroups channel web
+2016-12-29 15:34:28,243 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000078: Starting JGroups channel ejb
+2016-12-29 15:34:28,243 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000078: Starting JGroups channel server
+2016-12-29 15:34:28,269 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000094: Received new cluster view for channel hibernate: [caelum-22-17|0] (1) [caelum-22-17]
+2016-12-29 15:34:28,269 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000094: Received new cluster view for channel server: [caelum-22-17|0] (1) [caelum-22-17]
+2016-12-29 15:34:28,269 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000094: Received new cluster view for channel ejb: [caelum-22-17|0] (1) [caelum-22-17]
+2016-12-29 15:34:28,270 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000094: Received new cluster view for channel web: [caelum-22-17|0] (1) [caelum-22-17]
+2016-12-29 15:34:28,276 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000079: Channel web local address is caelum-22-17, physical addresses are [127.0.0.1:55200]
+2016-12-29 15:34:28,277 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000079: Channel server local address is caelum-22-17, physical addresses are [127.0.0.1:55200]
+2016-12-29 15:34:28,277 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000079: Channel ejb local address is caelum-22-17, physical addresses are [127.0.0.1:55200]
+2016-12-29 15:34:28,277 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000079: Channel hibernate local address is caelum-22-17, physical addresses are [127.0.0.1:55200]
+2016-12-29 15:34:28,290 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2016-12-29 15:34:28,334 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:34:28,334 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 69) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:34:28,334 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 70) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:34:28,335 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 69) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:34:28,336 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 70) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:34:28,336 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:34:28,337 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:34:28,338 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-12-29 15:34:28,612 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 70) WFLYCLINF0002: Started client-mappings cache from ejb container
+2016-12-29 15:34:30,124 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 72) Initializing Mojarra 2.2.13.SP1 20160303-1204 for context '/fj25-financas-web'
+2016-12-29 15:34:30,916 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 72) WFLYUT0021: Registered web context: /fj25-financas-web
+2016-12-29 15:34:30,974 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "fj25-financas-web.war" (runtime-name : "fj25-financas-web.war")
+2016-12-29 15:34:31,183 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-12-29 15:34:31,183 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-12-29 15:34:31,184 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 31060ms - Started 523 of 771 services (466 services are lazy, passive or on-demand)
+2016-12-29 15:38:19,504 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2016-12-29 15:38:19,575 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000080: Disconnecting JGroups channel server
+2016-12-29 15:38:19,576 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000080: Disconnecting JGroups channel hibernate
+2016-12-29 15:38:19,576 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000082: Stopping the RpcDispatcher for channel server
+2016-12-29 15:38:19,576 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000082: Stopping the RpcDispatcher for channel hibernate
+2016-12-29 15:38:19,588 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000080: Disconnecting JGroups channel web
+2016-12-29 15:38:19,589 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000082: Stopping the RpcDispatcher for channel web
+2016-12-29 15:38:19,598 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0022: Unregistered web context: /fj25-financas-web
+2016-12-29 15:38:19,633 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2016-12-29 15:38:19,636 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 80) MODCLUSTER000002: Initiating mod_cluster shutdown
+2016-12-29 15:38:19,701 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-12-29 15:38:19,703 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'fj25-financas-web.war#controlefinancas'
+2016-12-29 15:38:19,713 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-12-29 15:38:19,717 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'fj25-financas-web.war#controlefinancas'
+2016-12-29 15:38:19,722 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:/fj25DS]
+2016-12-29 15:38:19,739 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment fj25-financas-web.war (runtime-name: fj25-financas-web.war) in 217ms
+2016-12-29 15:38:19,740 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2016-12-29 15:38:19,740 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow AJP listener ajp suspending
+2016-12-29 15:38:19,740 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2016-12-29 15:38:19,743 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2016-12-29 15:38:19,744 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2016-12-29 15:38:19,745 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2016-12-29 15:38:19,748 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.1:8009
+2016-12-29 15:38:19,750 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 1.4.0.Final stopping
+2016-12-29 15:38:19,763 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000080: Disconnecting JGroups channel ejb
+2016-12-29 15:38:19,764 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000082: Stopping the RpcDispatcher for channel ejb
+2016-12-29 15:38:19,767 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = com.mysql
+2016-12-29 15:38:19,790 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 267ms

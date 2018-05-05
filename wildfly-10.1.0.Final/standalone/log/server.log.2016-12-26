@@ -1,0 +1,798 @@
+2016-12-26 22:07:51,026 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2016-12-26 22:07:56,932 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-12-26 22:07:58,348 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2016-12-26 22:07:58,352 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-8-oracle/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_91-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_91
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.91-b14
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final
+	jboss.host.name = caelum-22-17
+	jboss.modules.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = caelum-22-17
+	jboss.qualified.host.name = caelum-22-17
+	jboss.server.base.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	jboss.server.config.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log
+	jboss.server.name = caelum-22-17
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.13.0-91-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-8-oracle/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone-ha.xml -Djboss.server.base.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/bin
+	user.home = /home/analosnak
+	user.language = en
+	user.name = analosnak
+	user.timezone = America/Sao_Paulo
+2016-12-26 22:07:58,368 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2016-12-26 22:08:28,848 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found fj25-financas-web.war in deployment directory. To trigger deployment create a file called fj25-financas-web.war.dodeploy
+2016-12-26 22:08:31,532 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-12-26 22:08:32,264 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.4.0.Final
+2016-12-26 22:08:32,348 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.4.0.Final
+2016-12-26 22:08:34,266 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 41) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-12-26 22:08:34,278 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-12-26 22:08:34,281 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-12-26 22:08:34,359 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 58) WFLYSEC0002: Activating Security Subsystem
+2016-12-26 22:08:34,506 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 45) WFLYCLJG0001: Activating JGroups subsystem.
+2016-12-26 22:08:34,612 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 51) WFLYNAM0001: Activating Naming Subsystem
+2016-12-26 22:08:34,625 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+2016-12-26 22:08:34,683 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 40) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-12-26 22:08:34,703 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2016-12-26 22:08:34,759 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2016-12-26 22:08:39,130 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 1.4.0.Final starting
+2016-12-26 22:08:43,007 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-12-26 22:08:43,010 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-12-26 22:08:43,680 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.21.Final
+2016-12-26 22:08:43,692 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2016-12-26 22:08:43,693 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-12-26 22:08:45,079 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-12-26 22:08:47,446 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2016-12-26 22:08:47,479 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2016-12-26 22:08:49,029 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2016-12-26 22:08:49,030 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2016-12-26 22:08:49,574 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-12-26 22:08:51,457 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-12-26 22:08:51,457 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8009
+2016-12-26 22:08:52,099 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000001: Initializing mod_cluster version 1.3.3.Final
+2016-12-26 22:08:54,227 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2016-12-26 22:08:57,051 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2016-12-26 22:08:58,882 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/deployments
+2016-12-26 22:08:58,919 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "fj25-financas-web.war" (runtime-name: "fj25-financas-web.war")
+2016-12-26 22:09:06,925 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2016-12-26 22:09:30,095 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2016-12-26 22:09:37,510 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for controlefinancas
+2016-12-26 22:09:42,403 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.hibernate.search.engine:main") which may be changed or removed in future versions without notice.
+2016-12-26 22:09:42,403 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-1) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.apache.lucene:main") which may be changed or removed in future versions without notice.
+2016-12-26 22:09:44,325 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment fj25-financas-web.war
+2016-12-26 22:09:45,297 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 5.2.4.Final
+2016-12-26 22:09:50,093 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 2.3.5 (Final)
+2016-12-26 22:09:53,770 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "fj25-financas-web.war")]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.fj25DS"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"fj25-financas-web.war#controlefinancas\".__FIRST_PHASE__ is missing [jboss.naming.context.java.fj25DS]",
+        "jboss.persistenceunit.\"fj25-financas-web.war#controlefinancas\" is missing [jboss.naming.context.java.fj25DS]"
+    ]
+}
+2016-12-26 22:09:54,175 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "fj25-financas-web.war" (runtime-name : "fj25-financas-web.war")
+2016-12-26 22:09:54,178 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.naming.context.java.fj25DS (missing) dependents: [service jboss.persistenceunit."fj25-financas-web.war#controlefinancas".__FIRST_PHASE__, service jboss.persistenceunit."fj25-financas-web.war#controlefinancas"] 
+
+2016-12-26 22:09:55,889 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-12-26 22:09:55,890 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-12-26 22:09:55,891 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started (with errors) in 131923ms - Started 397 of 745 services (21 services failed or missing dependencies, 465 services are lazy, passive or on-demand)
+2016-12-26 22:09:56,590 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment fj25-financas-web.war (runtime-name: fj25-financas-web.war) in 111ms
+2016-12-26 22:09:57,777 WARN  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0357: Notification of type deployment-undeployed is not described for the resource at the address []
+2016-12-26 22:09:57,778 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0009: Undeployed "fj25-financas-web.war" (runtime-name: "fj25-financas-web.war")
+2016-12-26 22:09:57,780 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."fj25-financas-web.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".WeldInstantiator, service jboss.deployment.unit."fj25-financas-web.war".WeldStartService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".ee.ComponentRegistry (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."fj25-financas-web.war".jndiDependencyService (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START, WFLYCTL0208: ... and 5 more ] 
+      service jboss.persistenceunit."fj25-financas-web.war#controlefinancas" (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, WFLYCTL0208: ... and 6 more ] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.codec (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.session (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+      service org.wildfly.request-controller.control-point."fj25-financas-web.war".undertow (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+
+2016-12-26 22:10:00,722 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found fj25-financas-web.war in deployment directory. To trigger deployment create a file called fj25-financas-web.war.dodeploy
+2016-12-26 22:15:32,879 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2016-12-26 22:15:32,922 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-12-26 22:15:32,940 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2016-12-26 22:15:32,942 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2016-12-26 22:15:32,948 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2016-12-26 22:15:32,953 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow AJP listener ajp suspending
+2016-12-26 22:15:32,958 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.1:8009
+2016-12-26 22:15:32,959 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 70) MODCLUSTER000002: Initiating mod_cluster shutdown
+2016-12-26 22:15:32,961 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2016-12-26 22:15:32,962 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2016-12-26 22:15:33,021 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 1.4.0.Final stopping
+2016-12-26 22:15:33,064 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-12-26 22:15:33,155 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 245ms
+2016-12-26 22:15:41,525 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2016-12-26 22:15:43,897 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-12-26 22:15:44,300 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2016-12-26 22:15:44,304 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-8-oracle/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_91-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_91
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.91-b14
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final
+	jboss.host.name = caelum-22-17
+	jboss.modules.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = caelum-22-17
+	jboss.qualified.host.name = caelum-22-17
+	jboss.server.base.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	jboss.server.config.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log
+	jboss.server.name = caelum-22-17
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.13.0-91-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-8-oracle/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone-ha.xml -Djboss.server.base.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/bin
+	user.home = /home/analosnak
+	user.language = en
+	user.name = analosnak
+	user.timezone = America/Sao_Paulo
+2016-12-26 22:15:44,305 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2016-12-26 22:15:55,875 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment fj25-financas-web.war
+2016-12-26 22:15:55,906 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found fj25-financas-web.war in deployment directory. To trigger deployment create a file called fj25-financas-web.war.dodeploy
+2016-12-26 22:15:56,291 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-12-26 22:15:56,344 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.4.0.Final
+2016-12-26 22:15:56,366 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.4.0.Final
+2016-12-26 22:15:56,475 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 41) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-12-26 22:15:56,643 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 45) WFLYCLJG0001: Activating JGroups subsystem.
+2016-12-26 22:15:56,647 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 51) WFLYNAM0001: Activating Naming Subsystem
+2016-12-26 22:15:56,645 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-12-26 22:15:56,666 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 58) WFLYSEC0002: Activating Security Subsystem
+2016-12-26 22:15:56,667 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 40) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-12-26 22:15:56,685 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-12-26 22:15:56,701 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+2016-12-26 22:15:56,759 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2016-12-26 22:15:56,805 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2016-12-26 22:15:57,310 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.4.0.Final starting
+2016-12-26 22:15:58,456 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-12-26 22:15:58,461 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-12-26 22:15:58,707 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-12-26 22:15:58,762 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 4.0.21.Final
+2016-12-26 22:15:58,791 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2016-12-26 22:15:58,795 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-12-26 22:15:59,499 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2016-12-26 22:15:59,500 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2016-12-26 22:15:59,579 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2016-12-26 22:15:59,586 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2016-12-26 22:15:59,763 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-12-26 22:16:00,064 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2016-12-26 22:16:00,077 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-12-26 22:16:00,077 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8009
+2016-12-26 22:16:00,092 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000001: Initializing mod_cluster version 1.3.3.Final
+2016-12-26 22:16:00,107 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/deployments
+2016-12-26 22:16:00,171 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "fj25-financas-web.war" (runtime-name: "fj25-financas-web.war")
+2016-12-26 22:16:00,254 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2016-12-26 22:16:01,397 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2016-12-26 22:16:04,155 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2016-12-26 22:16:06,034 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for controlefinancas
+2016-12-26 22:16:07,706 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-4) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.hibernate.search.engine:main") which may be changed or removed in future versions without notice.
+2016-12-26 22:16:07,707 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-4) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.apache.lucene:main") which may be changed or removed in future versions without notice.
+2016-12-26 22:16:08,285 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment fj25-financas-web.war
+2016-12-26 22:16:08,870 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 5.2.4.Final
+2016-12-26 22:16:10,107 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 2.3.5 (Final)
+2016-12-26 22:16:10,988 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "fj25-financas-web.war")]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.fj25DS"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"fj25-financas-web.war#controlefinancas\".__FIRST_PHASE__ is missing [jboss.naming.context.java.fj25DS]",
+        "jboss.persistenceunit.\"fj25-financas-web.war#controlefinancas\" is missing [jboss.naming.context.java.fj25DS]"
+    ]
+}
+2016-12-26 22:16:11,059 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "fj25-financas-web.war" (runtime-name : "fj25-financas-web.war")
+2016-12-26 22:16:11,062 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.naming.context.java.fj25DS (missing) dependents: [service jboss.persistenceunit."fj25-financas-web.war#controlefinancas".__FIRST_PHASE__, service jboss.persistenceunit."fj25-financas-web.war#controlefinancas"] 
+
+2016-12-26 22:16:11,242 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-12-26 22:16:11,244 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-12-26 22:16:11,244 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started (with errors) in 32680ms - Started 397 of 745 services (21 services failed or missing dependencies, 465 services are lazy, passive or on-demand)
+2016-12-26 22:16:11,326 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment fj25-financas-web.war (runtime-name: fj25-financas-web.war) in 35ms
+2016-12-26 22:16:11,429 WARN  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0357: Notification of type deployment-undeployed is not described for the resource at the address []
+2016-12-26 22:16:11,433 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0009: Undeployed "fj25-financas-web.war" (runtime-name: "fj25-financas-web.war")
+2016-12-26 22:16:11,436 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."fj25-financas-web.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator, service jboss.deployment.unit."fj25-financas-web.war".CdiValidatorFactoryService, service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".WeldInstantiator, WFLYCTL0208: ... and 6 more ] 
+      service jboss.deployment.unit."fj25-financas-web.war".WeldStartService (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator, service jboss.deployment.unit."fj25-financas-web.war".CdiValidatorFactoryService, service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, WFLYCTL0208: ... and 6 more ] 
+      service jboss.deployment.unit."fj25-financas-web.war".beanmanager (missing) dependents: [service jboss.persistenceunit."fj25-financas-web.war#controlefinancas"] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".ee.ComponentRegistry (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."fj25-financas-web.war".jndiDependencyService (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START, WFLYCTL0208: ... and 5 more ] 
+      service jboss.persistenceunit."fj25-financas-web.war#controlefinancas" (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START, WFLYCTL0208: ... and 4 more ] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.codec (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.session (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+      service org.wildfly.request-controller.control-point."fj25-financas-web.war".undertow (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+
+2016-12-26 22:16:16,105 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found fj25-financas-web.war in deployment directory. To trigger deployment create a file called fj25-financas-web.war.dodeploy
+2016-12-26 22:25:42,498 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2016-12-26 22:25:42,538 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-12-26 22:25:42,563 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+2016-12-26 22:25:42,562 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2016-12-26 22:25:42,565 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow AJP listener ajp suspending
+2016-12-26 22:25:42,565 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 68) MODCLUSTER000002: Initiating mod_cluster shutdown
+2016-12-26 22:25:42,567 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.1:8009
+2016-12-26 22:25:42,569 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2016-12-26 22:25:42,587 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2016-12-26 22:25:42,588 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2016-12-26 22:25:42,617 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 1.4.0.Final stopping
+2016-12-26 22:25:42,649 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-12-26 22:25:42,673 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 130ms
+2016-12-26 22:26:06,422 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2016-12-26 22:26:08,771 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-12-26 22:26:09,187 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2016-12-26 22:26:09,190 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-8-oracle/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_91-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_91
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.91-b14
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final
+	jboss.host.name = caelum-22-17
+	jboss.modules.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = caelum-22-17
+	jboss.qualified.host.name = caelum-22-17
+	jboss.server.base.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	jboss.server.config.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log
+	jboss.server.name = caelum-22-17
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.13.0-91-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-8-oracle/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone-ha.xml -Djboss.server.base.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/bin
+	user.home = /home/analosnak
+	user.language = en
+	user.name = analosnak
+	user.timezone = America/Sao_Paulo
+2016-12-26 22:26:09,191 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2016-12-26 22:26:14,911 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment fj25-financas-web.war
+2016-12-26 22:26:14,921 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found fj25-financas-web.war in deployment directory. To trigger deployment create a file called fj25-financas-web.war.dodeploy
+2016-12-26 22:26:15,375 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-12-26 22:26:15,427 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.4.0.Final
+2016-12-26 22:26:15,435 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.4.0.Final
+2016-12-26 22:26:15,698 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 41) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-12-26 22:26:15,730 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 45) WFLYCLJG0001: Activating JGroups subsystem.
+2016-12-26 22:26:15,737 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 40) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-12-26 22:26:15,726 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-12-26 22:26:15,753 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 58) WFLYSEC0002: Activating Security Subsystem
+2016-12-26 22:26:15,791 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 51) WFLYNAM0001: Activating Naming Subsystem
+2016-12-26 22:26:15,799 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-12-26 22:26:15,841 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2016-12-26 22:26:15,921 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+2016-12-26 22:26:15,922 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2016-12-26 22:26:16,286 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 1.4.0.Final starting
+2016-12-26 22:26:16,410 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.21.Final
+2016-12-26 22:26:16,731 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-12-26 22:26:16,736 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-12-26 22:26:17,058 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2016-12-26 22:26:17,066 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-12-26 22:26:17,383 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-12-26 22:26:17,540 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2016-12-26 22:26:17,541 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2016-12-26 22:26:17,589 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2016-12-26 22:26:17,589 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2016-12-26 22:26:18,346 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-12-26 22:26:18,352 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8009
+2016-12-26 22:26:18,370 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000001: Initializing mod_cluster version 1.3.3.Final
+2016-12-26 22:26:19,194 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-12-26 22:26:19,287 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2016-12-26 22:26:19,803 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2016-12-26 22:26:19,966 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "fj25-financas-web.war" (runtime-name: "fj25-financas-web.war")
+2016-12-26 22:26:20,007 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/deployments
+2016-12-26 22:26:21,660 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2016-12-26 22:26:22,117 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2016-12-26 22:26:23,388 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for controlefinancas
+2016-12-26 22:26:23,826 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.hibernate.search.engine:main") which may be changed or removed in future versions without notice.
+2016-12-26 22:26:23,828 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.apache.lucene:main") which may be changed or removed in future versions without notice.
+2016-12-26 22:26:24,192 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment fj25-financas-web.war
+2016-12-26 22:26:24,695 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 5.2.4.Final
+2016-12-26 22:26:26,627 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 2.3.5 (Final)
+2016-12-26 22:26:27,459 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "fj25-financas-web.war")]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.fj25DS"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"fj25-financas-web.war#controlefinancas\" is missing [jboss.naming.context.java.fj25DS]",
+        "jboss.persistenceunit.\"fj25-financas-web.war#controlefinancas\".__FIRST_PHASE__ is missing [jboss.naming.context.java.fj25DS]"
+    ]
+}
+2016-12-26 22:26:27,557 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "fj25-financas-web.war" (runtime-name : "fj25-financas-web.war")
+2016-12-26 22:26:27,559 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.naming.context.java.fj25DS (missing) dependents: [service jboss.persistenceunit."fj25-financas-web.war#controlefinancas", service jboss.persistenceunit."fj25-financas-web.war#controlefinancas".__FIRST_PHASE__] 
+
+2016-12-26 22:26:27,762 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-12-26 22:26:27,763 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-12-26 22:26:27,764 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started (with errors) in 24179ms - Started 397 of 745 services (21 services failed or missing dependencies, 465 services are lazy, passive or on-demand)
+2016-12-26 22:26:27,880 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment fj25-financas-web.war (runtime-name: fj25-financas-web.war) in 46ms
+2016-12-26 22:26:28,051 WARN  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0357: Notification of type deployment-undeployed is not described for the resource at the address []
+2016-12-26 22:26:28,052 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0009: Undeployed "fj25-financas-web.war" (runtime-name: "fj25-financas-web.war")
+2016-12-26 22:26:28,055 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."fj25-financas-web.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator, service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".WeldInstantiator, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".WeldInstantiator, WFLYCTL0208: ... and 5 more ] 
+      service jboss.deployment.unit."fj25-financas-web.war".WeldStartService (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator, service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".WeldInstantiator, WFLYCTL0208: ... and 6 more ] 
+      service jboss.deployment.unit."fj25-financas-web.war".beanmanager (missing) dependents: [service jboss.persistenceunit."fj25-financas-web.war#controlefinancas"] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".jndiDependencyService (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START, WFLYCTL0208: ... and 4 more ] 
+      service jboss.persistenceunit."fj25-financas-web.war#controlefinancas" (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, WFLYCTL0208: ... and 5 more ] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.codec (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.session (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+
+2016-12-26 22:26:32,601 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0004: Found fj25-financas-web.war in deployment directory. To trigger deployment create a file called fj25-financas-web.war.dodeploy
+2016-12-26 22:30:40,606 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2016-12-26 22:30:40,627 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-12-26 22:30:40,648 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+2016-12-26 22:30:40,649 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2016-12-26 22:30:40,653 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2016-12-26 22:30:40,680 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2016-12-26 22:30:40,681 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2016-12-26 22:30:40,682 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow AJP listener ajp suspending
+2016-12-26 22:30:40,682 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.1:8009
+2016-12-26 22:30:40,683 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 68) MODCLUSTER000002: Initiating mod_cluster shutdown
+2016-12-26 22:30:40,781 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 1.4.0.Final stopping
+2016-12-26 22:30:40,825 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-12-26 22:30:40,881 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 237ms
+2016-12-26 22:31:51,133 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2016-12-26 22:31:53,206 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-12-26 22:31:53,576 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2016-12-26 22:31:53,578 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-8-oracle/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_91-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_91
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.91-b14
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final
+	jboss.host.name = caelum-22-17
+	jboss.modules.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = caelum-22-17
+	jboss.qualified.host.name = caelum-22-17
+	jboss.server.base.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	jboss.server.config.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log
+	jboss.server.name = caelum-22-17
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.13.0-91-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-8-oracle/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone-ha.xml -Djboss.server.base.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/bin
+	user.home = /home/analosnak
+	user.language = en
+	user.name = analosnak
+	user.timezone = America/Sao_Paulo
+2016-12-26 22:31:53,580 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2016-12-26 22:32:00,647 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found fj25-financas-web.war in deployment directory. To trigger deployment create a file called fj25-financas-web.war.dodeploy
+2016-12-26 22:32:03,426 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-12-26 22:32:03,495 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.4.0.Final
+2016-12-26 22:32:03,530 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.4.0.Final
+2016-12-26 22:32:03,710 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 41) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-12-26 22:32:03,715 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 51) WFLYNAM0001: Activating Naming Subsystem
+2016-12-26 22:32:03,878 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 45) WFLYCLJG0001: Activating JGroups subsystem.
+2016-12-26 22:32:03,904 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 40) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-12-26 22:32:03,893 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-12-26 22:32:03,927 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+2016-12-26 22:32:03,929 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 58) WFLYSEC0002: Activating Security Subsystem
+2016-12-26 22:32:03,956 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-12-26 22:32:04,006 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2016-12-26 22:32:04,008 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2016-12-26 22:32:05,570 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2016-12-26 22:32:05,571 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-12-26 22:32:06,596 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.4.0.Final starting
+2016-12-26 22:32:06,890 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-12-26 22:32:06,896 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-12-26 22:32:07,386 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 4.0.21.Final
+2016-12-26 22:32:08,005 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-12-26 22:32:08,091 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-12-26 22:32:08,378 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2016-12-26 22:32:08,380 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2016-12-26 22:32:08,804 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2016-12-26 22:32:08,804 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2016-12-26 22:32:09,521 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8009
+2016-12-26 22:32:09,521 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-12-26 22:32:09,548 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000001: Initializing mod_cluster version 1.3.3.Final
+2016-12-26 22:32:09,631 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 64) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2016-12-26 22:32:10,767 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2016-12-26 22:32:11,274 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/analosnak/Caelum/cursos/fj25/wildfly-10.1.0.Final/standalone/deployments
+2016-12-26 22:32:11,445 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "fj25-financas-web.war" (runtime-name: "fj25-financas-web.war")
+2016-12-26 22:32:15,494 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2016-12-26 22:32:17,242 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2016-12-26 22:32:20,603 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for controlefinancas
+2016-12-26 22:32:21,373 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.hibernate.search.engine:main") which may be changed or removed in future versions without notice.
+2016-12-26 22:32:21,374 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-6) WFLYSRV0018: Deployment "deployment.fj25-financas-web.war" is using a private module ("org.apache.lucene:main") which may be changed or removed in future versions without notice.
+2016-12-26 22:32:22,796 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment fj25-financas-web.war
+2016-12-26 22:32:23,398 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 5.2.4.Final
+2016-12-26 22:32:24,960 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 2.3.5 (Final)
+2016-12-26 22:32:25,949 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "fj25-financas-web.war")]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.fj25DS"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"fj25-financas-web.war#controlefinancas\" is missing [jboss.naming.context.java.fj25DS]",
+        "jboss.persistenceunit.\"fj25-financas-web.war#controlefinancas\".__FIRST_PHASE__ is missing [jboss.naming.context.java.fj25DS]"
+    ]
+}
+2016-12-26 22:32:26,142 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "fj25-financas-web.war" (runtime-name : "fj25-financas-web.war")
+2016-12-26 22:32:26,144 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.naming.context.java.fj25DS (missing) dependents: [service jboss.persistenceunit."fj25-financas-web.war#controlefinancas", service jboss.persistenceunit."fj25-financas-web.war#controlefinancas".__FIRST_PHASE__] 
+
+2016-12-26 22:32:26,524 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-12-26 22:32:26,525 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-12-26 22:32:26,525 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started (with errors) in 38331ms - Started 397 of 745 services (21 services failed or missing dependencies, 465 services are lazy, passive or on-demand)
+2016-12-26 22:32:26,759 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment fj25-financas-web.war (runtime-name: fj25-financas-web.war) in 87ms
+2016-12-26 22:32:26,910 WARN  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0357: Notification of type deployment-undeployed is not described for the resource at the address []
+2016-12-26 22:32:26,911 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0009: Undeployed "fj25-financas-web.war" (runtime-name: "fj25-financas-web.war")
+2016-12-26 22:32:26,914 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."fj25-financas-web.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".CdiValidatorFactoryService, service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".WeldInstantiator, service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".WeldInstantiator, WFLYCTL0208: ... and 4 more ] 
+      service jboss.deployment.unit."fj25-financas-web.war".WeldStartService (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".WeldInstantiator, service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator, service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator] 
+      service jboss.deployment.unit."fj25-financas-web.war".beanmanager (missing) dependents: [service jboss.persistenceunit."fj25-financas-web.war#controlefinancas"] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacesServlet".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."fj25-financas-web.war".ee.ComponentRegistry (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."fj25-financas-web.war".jndiDependencyService (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldInitialListener".START, service jboss.deployment.unit."fj25-financas-web.war".component."org.jboss.weld.servlet.WeldTerminalListener".START, service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START, service jboss.deployment.unit."fj25-financas-web.war".WeldStartService] 
+      service jboss.persistenceunit."fj25-financas-web.war#controlefinancas" (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService, service jboss.deployment.unit."fj25-financas-web.war".component."com.sun.faces.config.ConfigureListener".START, service jboss.deployment.unit."fj25-financas-web.war".WeldStartService, service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web (missing) dependents: [service jboss.deployment.unit."fj25-financas-web.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.codec (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+      service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.session (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+      service org.wildfly.request-controller.control-point."fj25-financas-web.war".undertow (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./fj25-financas-web.UndertowDeploymentInfoService] 
+
+2016-12-26 22:32:31,323 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found fj25-financas-web.war in deployment directory. To trigger deployment create a file called fj25-financas-web.war.dodeploy
+2016-12-26 22:32:53,893 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2016-12-26 22:32:53,933 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-12-26 22:32:53,954 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2016-12-26 22:32:53,956 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 68) MODCLUSTER000002: Initiating mod_cluster shutdown
+2016-12-26 22:32:53,956 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2016-12-26 22:32:53,958 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow AJP listener ajp suspending
+2016-12-26 22:32:53,959 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.1:8009
+2016-12-26 22:32:53,961 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2016-12-26 22:32:53,963 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2016-12-26 22:32:53,967 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2016-12-26 22:32:53,969 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 1.4.0.Final stopping
+2016-12-26 22:32:54,004 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-12-26 22:32:54,014 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 90ms
