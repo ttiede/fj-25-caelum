@@ -198,7 +198,7 @@
         <subsystem xmlns="urn:jboss:domain:ejb3:4.0">
             <session-bean>
                 <stateless>
-                    <bean-instance-pool-ref pool-name="slsb-strict-max-pool"/>
+                    <!-- <bean-instance-pool-ref pool-name="slsb-strict-max-pool"/> -->
                 </stateless>
                 <stateful default-access-timeout="5000" cache-ref="distributable" passivation-disabled-cache-ref="simple"/>
                 <singleton default-access-timeout="5000"/>
@@ -209,6 +209,7 @@
                     <strict-max-pool name="mdb-strict-max-pool" max-pool-size="20" instance-acquisition-timeout="5" instance-acquisition-timeout-unit="MINUTES"/>
                 </bean-instance-pools>
             </pools>
+
             <caches>
                 <cache name="simple"/>
                 <cache name="distributable" passivation-store-ref="infinispan" aliases="passivating clustered"/>
