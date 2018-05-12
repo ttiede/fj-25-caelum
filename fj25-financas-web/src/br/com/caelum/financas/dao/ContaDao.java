@@ -2,20 +2,43 @@ package br.com.caelum.financas.dao;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+import javax.ejb.EJBException;
 import javax.ejb.Stateless;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.UserTransaction;
 
 import br.com.caelum.financas.modelo.Conta;
 
 @Stateless
+@TransactionManagement(TransactionManagementType.BEAN)
 public class ContaDao {
 
 	@PersistenceContext
 	EntityManager manager;
-
+	@Resource
+	private	UserTransaction	ut;
+	
 	public void adiciona(Conta conta) {
+		try {
+			this.ut.begin();
+		} catch (Exception e) {
+			throw new EJBException(e);
+		}
 		this.manager.persist(conta);
+		try {
+			this.ut.commit();
+		} catch (Exception e) {
+			try {
+				this.ut.rollback();
+			} catch (Exception e1) {
+				throw new EJBException(e1);
+			}
+			throw new EJBException(e);
+		}
 	}
 
 	public Conta busca(Integer id) {

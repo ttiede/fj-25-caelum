@@ -9,6 +9,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import br.com.caelum.financas.dao.MovimentacaoDao;
+import br.com.caelum.financas.modelo.Conta;
 import br.com.caelum.financas.modelo.Movimentacao;
 import br.com.caelum.financas.modelo.TipoMovimentacao;
 
@@ -26,6 +27,9 @@ public class MovimentacoesBean implements Serializable {
 	private Integer categoriaId;
 
 	public void grava() {
+		Conta conta = new Conta();
+		conta.setId(contaId);
+		movimentacao.setConta(conta);
 		movimentacaoDao.adiciona(movimentacao);
 		this.movimentacoes = movimentacaoDao.lista();
 		limpaFormularioDoJSF();
