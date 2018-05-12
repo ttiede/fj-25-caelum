@@ -1,15 +1,18 @@
 package br.com.caelum.financas.dao;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.ManyToMany;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 import br.com.caelum.financas.exception.ValorInvalidoException;
+import br.com.caelum.financas.modelo.Categoria;
 import br.com.caelum.financas.modelo.Conta;
 import br.com.caelum.financas.modelo.Movimentacao;
 import br.com.caelum.financas.modelo.TipoMovimentacao;
@@ -74,12 +77,10 @@ public class MovimentacaoDao {
 	}
 
 	public List<ValorPorMesEAno> listaMesesComMovimentacoes(Conta conta, TipoMovimentacao tipo) {
-		String jpql = "select " + 
-				" new br.com.caelum.financas.modelo.ValorPorMesEAno(month(m.data), "
-				+ " year(m.data), sum(m.valor)) " 
-				+  " from Movimentacao m"
-				+ " where m.conta = :conta	and	m.tipoMovimentacao = :tipo "
-				+ " group by year(m.data), month(m.data) " + " order by sum(m.valor) desc ";
+		String jpql = "select " + " new br.com.caelum.financas.modelo.ValorPorMesEAno(month(m.data), "
+				+ " year(m.data), sum(m.valor)) " + " from Movimentacao m"
+				+ " where m.conta = :conta	and	m.tipoMovimentacao = :tipo " + " group by year(m.data), month(m.data) "
+				+ " order by sum(m.valor) desc ";
 		TypedQuery<ValorPorMesEAno> query = this.manager.createQuery(jpql, ValorPorMesEAno.class);
 		query.setParameter("conta", conta);
 		query.setParameter("tipo", tipo);
