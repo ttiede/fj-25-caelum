@@ -1,7 +1,5 @@
 package br.com.caelum.financas.dao;
 
-
-
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -9,6 +7,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 
 import br.com.caelum.financas.exception.ValorInvalidoException;
 import br.com.caelum.financas.modelo.Conta;
@@ -50,11 +49,26 @@ public class MovimentacaoDao {
 	}
 
 	public List<Movimentacao> listaPorValorETipo(BigDecimal valor, TipoMovimentacao tipo) {
-		String jpql = "select m from Movimentacao m " + "where m.valor <=	:valor and m.tipoMovimentacao =	:tipo";
+		String jpql = "select m from Movimentacao m " + "where m.valor <= :valor and m.tipoMovimentacao =	:tipo";
 		Query query = this.manager.createQuery(jpql);
 		query.setParameter("valor", valor);
 		query.setParameter("tipo", tipo);
 
+		return query.getResultList();
+	}
+
+	public BigDecimal calculaTotalMovimentado(Conta conta, TipoMovimentacao tipo) {
+		String jpql = "SELECT sum(m.valor) FROM	Movimentacao m WHERE m.conta=:conta and m.tipoMovimentacao=:tipo";
+		TypedQuery<BigDecimal> query = this.manager.createQuery(jpql, BigDecimal.class);
+		query.setParameter("conta", conta);
+		query.setParameter("tipo", tipo);
+		return query.getSingleResult();
+	}
+
+	public List<Movimentacao> buscaTodasMovimentacoesDaConta(String titular) {
+		String jpql = "select	m	from	Movimentacao	m	" + "where	m.conta.titular	like	:titular";
+		TypedQuery<Movimentacao> query = this.manager.createQuery(jpql, Movimentacao.class);
+		query.setParameter("titular", "%" + titular + "%");
 		return query.getResultList();
 	}
 }
