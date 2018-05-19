@@ -1,18 +1,15 @@
 package br.com.caelum.financas.dao;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.ManyToMany;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 import br.com.caelum.financas.exception.ValorInvalidoException;
-import br.com.caelum.financas.modelo.Categoria;
 import br.com.caelum.financas.modelo.Conta;
 import br.com.caelum.financas.modelo.Movimentacao;
 import br.com.caelum.financas.modelo.TipoMovimentacao;
@@ -36,9 +33,17 @@ public class MovimentacaoDao {
 	}
 
 	public List<Movimentacao> lista() {
-		return this.manager.createQuery("select m from Movimentacao m", Movimentacao.class).getResultList();
+		return	manager.createQuery("select	distinct m from Movimentacao m "
+				+	" join fetch m.categorias",	Movimentacao.class).
+				getResultList();
 	}
-
+	
+	public List<Movimentacao> 	listaComCategorias	() {
+		return	manager.createQuery("select	distinct m from Movimentacao m "
+				+	" left join fetch m.categorias",	Movimentacao.class).
+				getResultList();
+	}
+	
 	public void remove(Movimentacao movimentacao) {
 		Movimentacao movimentacaoParaRemover = this.manager.find(Movimentacao.class, movimentacao.getId());
 		this.manager.remove(movimentacaoParaRemover);

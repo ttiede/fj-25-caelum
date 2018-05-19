@@ -35,13 +35,13 @@ public class MovimentacoesBean implements Serializable {
 		conta.setId(contaId);
 		movimentacao.setConta(conta);
 		movimentacaoDao.adiciona(movimentacao);
-		this.movimentacoes = movimentacaoDao.lista();
+		this.movimentacoes = movimentacaoDao.listaComCategorias();
 		limpaFormularioDoJSF();
 	}
 
 	public void remove() {
 		movimentacaoDao.remove(this.movimentacao);
-		this.movimentacoes = movimentacaoDao.lista();
+		this.movimentacoes = movimentacaoDao.listaComCategorias();
 		limpaFormularioDoJSF();
 	}
 
