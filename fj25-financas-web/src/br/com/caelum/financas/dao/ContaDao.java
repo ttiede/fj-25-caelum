@@ -7,8 +7,8 @@ import javax.ejb.EJBException;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionManagement;
 import javax.ejb.TransactionManagementType;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import javax.transaction.UserTransaction;
 
 import br.com.caelum.financas.modelo.Conta;
@@ -17,7 +17,7 @@ import br.com.caelum.financas.modelo.Conta;
 @TransactionManagement(TransactionManagementType.BEAN)
 public class ContaDao {
 
-	@PersistenceContext
+	@Inject	//@PersistenceContext
 	EntityManager manager;
 	@Resource
 	private	UserTransaction	ut;
@@ -28,6 +28,8 @@ public class ContaDao {
 		} catch (Exception e) {
 			throw new EJBException(e);
 		}
+		this.manager.joinTransaction();
+
 		this.manager.persist(conta);
 		try {
 			this.ut.commit();
@@ -51,6 +53,7 @@ public class ContaDao {
 
 	public void remove(Conta conta) {
 		Conta contaParaRemover = this.manager.find(Conta.class, conta.getId());
+		this.manager.joinTransaction();
 		this.manager.remove(contaParaRemover);
 	}
 
