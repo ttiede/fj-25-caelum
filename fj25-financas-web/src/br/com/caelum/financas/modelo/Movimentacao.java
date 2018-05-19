@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Cacheable;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -14,11 +15,12 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
+@Cacheable
 @Entity
 public class Movimentacao {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String descricao;
 	private LocalDateTime data;
@@ -26,10 +28,10 @@ public class Movimentacao {
 
 	@ManyToOne
 	private Conta conta;
-	
+
 	@ManyToMany
 	private List<Categoria> categorias = new ArrayList<Categoria>();
-	
+
 	@Enumerated(EnumType.STRING)
 	private TipoMovimentacao tipoMovimentacao;
 
@@ -80,10 +82,11 @@ public class Movimentacao {
 	public void setConta(Conta conta) {
 		this.conta = conta;
 	}
-	
+
 	public List<Categoria> getCategorias() {
 		return categorias;
 	}
+
 	public void setCategorias(List<Categoria> categorias) {
 		this.categorias = categorias;
 	}

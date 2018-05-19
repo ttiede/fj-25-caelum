@@ -14,24 +14,24 @@ import javax.transaction.UserTransaction;
 import br.com.caelum.financas.modelo.Conta;
 
 @Stateless
-@TransactionManagement(TransactionManagementType.BEAN)
+//@TransactionManagement(TransactionManagementType.BEAN)
 public class ContaDao {
 
 	@Inject	//@PersistenceContext
 	EntityManager manager;
-	@Resource
-	private	UserTransaction	ut;
+	/*@Resource
+	private	UserTransaction	ut;*/
 	
 	public void adiciona(Conta conta) {
-		try {
+		/*try {
 			this.ut.begin();
 		} catch (Exception e) {
 			throw new EJBException(e);
-		}
+		}*/
 		this.manager.joinTransaction();
 
 		this.manager.persist(conta);
-		try {
+/*		try {
 			this.ut.commit();
 		} catch (Exception e) {
 			try {
@@ -40,7 +40,7 @@ public class ContaDao {
 				throw new EJBException(e1);
 			}
 			throw new EJBException(e);
-		}
+		}*/
 	}
 
 	public Conta busca(Integer id) {
@@ -54,10 +54,12 @@ public class ContaDao {
 	public void remove(Conta conta) {
 		Conta contaParaRemover = this.manager.find(Conta.class, conta.getId());
 		this.manager.joinTransaction();
+
 		this.manager.remove(contaParaRemover);
 	}
 
 	public Conta altera(Conta conta) {
+		this.manager.joinTransaction();
 		return this.manager.merge(conta);
 	}
 }
