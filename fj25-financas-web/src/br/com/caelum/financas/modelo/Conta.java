@@ -8,7 +8,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 import javax.persistence.Version;
@@ -24,9 +26,7 @@ import br.com.caelum.financas.mb.ValidacaoBean.NumeroEAgencia;
 @NumeroEAgencia
 @Entity
 @Cacheable
-@Table(uniqueConstraints=	{ 
-		@UniqueConstraint(columnNames={"agencia",	"numero"})
-})
+@Table(uniqueConstraints = { @UniqueConstraint(columnNames = { "agencia", "numero" }) })
 public class Conta {
 
 	@Cache(usage = CacheConcurrencyStrategy.TRANSACTIONAL)
@@ -35,17 +35,28 @@ public class Conta {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	@Pattern(regexp="[A-Z].*")	
-	@Size(min=3, max=20)
-	private String titular;	
+	@Pattern(regexp = "[A-Z].*")
+	@Size(min = 3, max = 20)
+	private String titular;
 	private String agencia;
 	@NotNull
 	private String numero;
 	@NotNull
-	@Column(length=20,	nullable=false)
+	@Column(length = 20, nullable = false)
 	private String banco;
 	@Version
 	private Integer versao; // getter e setter
+	@OneToOne
+	@JoinColumn(unique=true)
+	private	Gerente	gerente;	
+
+	public Gerente getGerente() {
+		return gerente;
+	}
+
+	public void setGerente(Gerente gerente) {
+		this.gerente = gerente;
+	}
 
 	public List<Movimentacao> getMovimentacoes() {
 		return movimentacoes;
@@ -94,9 +105,11 @@ public class Conta {
 	public void setBanco(String banco) {
 		this.banco = banco;
 	}
+
 	public Integer getVersao() {
 		return versao;
 	}
+
 	public void setVersao(Integer versao) {
 		this.versao = versao;
 	}
