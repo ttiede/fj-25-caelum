@@ -20,7 +20,7 @@
 			<property name="hibernate.format_sql" value="true" />
 			<property name="hibernate.cache.use_query_cache" value="true" />
 			<!-- poderia ser: update, create, create-drop, none -->
-			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.hbm2ddl.auto" value="create" />
 
 		</properties>
 	</persistence-unit>
