@@ -28,6 +28,18 @@ public class ContasBean implements Serializable {
 	private GerenteDao gerenteDao;
 	private Integer gerenteId; // implementar o getter e setter
 
+	public Integer getGerenteId() {
+		return gerenteId;
+	}
+
+	public void setGerenteId(Integer gerenteId) {
+		this.gerenteId = gerenteId;
+	}
+
+	public void setContas(List<Conta> contas) {
+		this.contas = contas;
+	}
+
 	public Conta getConta() {
 		return conta;
 	}
