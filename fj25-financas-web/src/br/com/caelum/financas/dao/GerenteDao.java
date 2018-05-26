@@ -7,6 +7,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
 import br.com.caelum.financas.modelo.Gerente;
+import br.com.caelum.financas.modelo.GerenteConta;
 
 @Stateless
 public class GerenteDao {
@@ -17,9 +18,9 @@ public class GerenteDao {
 		this.manager.joinTransaction();
 		this.manager.persist(gerente);
 	}
-	
-	public Gerente busca(Integer id) {
-		return this.manager.find(Gerente.class, id);
+
+	public GerenteConta busca(Integer id) {
+		return manager.find(GerenteConta.class, id);
 	}
 
 	public List<Gerente> lista() {
@@ -30,11 +31,11 @@ public class GerenteDao {
 		Gerente gerenteParaRemover = this.manager.find(Gerente.class, gerente.getId());
 		this.manager.joinTransaction();
 
-		this.manager.remove(gerenteParaRemover );
+		this.manager.remove(gerenteParaRemover);
 	}
-	
-	public Gerente altera(Gerente  gerente ) {
+
+	public Gerente altera(Gerente gerente) {
 		this.manager.joinTransaction();
 		return this.manager.merge(gerente);
-	}	
+	}
 }

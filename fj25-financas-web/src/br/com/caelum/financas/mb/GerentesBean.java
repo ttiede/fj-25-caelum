@@ -8,8 +8,8 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import br.com.caelum.financas.dao.GerenteDao;
-import br.com.caelum.financas.modelo.Conta;
 import br.com.caelum.financas.modelo.Gerente;
+import br.com.caelum.financas.modelo.GerenteConta;
 
 @Named
 @ViewScoped
@@ -22,7 +22,7 @@ public class GerentesBean implements Serializable {
 
 	private List<Gerente> gerentes;
 
-	private Gerente gerente = new Gerente(); // implementar o getter e setter
+	private Gerente gerente = new GerenteConta(); // implementar o getter e setter
 
 	public List<Gerente> getGerentes() {
 		if (this.gerentes == null) {
@@ -50,7 +50,7 @@ public class GerentesBean implements Serializable {
 	}
 	
 	private void limpaFormularioDoJSF() {
-		this.gerente = new Gerente();
+		this.gerente = new GerenteConta();
 	}
 
 	public Gerente getGerente() {

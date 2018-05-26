@@ -1,13 +1,18 @@
 package br.com.caelum.financas.modelo;
 
+import java.io.Serializable;
+
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 
 @Entity
-public class Gerente {
+@Inheritance(strategy = InheritanceType.JOINED)
+public class Gerente implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
@@ -52,29 +57,17 @@ public class Gerente {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-/*
-	public String getRua() {
-		return rua;
-	}
-
-	public void setRua(String rua) {
-		this.rua = rua;
-	}
-
-	public String getCidade() {
-		return cidade;
-	}
-
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
-	}
-
-	public String getEstado() {
-		return estado;
-	}
-
-	public void setEstado(String estado) {
-		this.estado = estado;
-	}
-*/
+	/*
+	 * public String getRua() { return rua; }
+	 * 
+	 * public void setRua(String rua) { this.rua = rua; }
+	 * 
+	 * public String getCidade() { return cidade; }
+	 * 
+	 * public void setCidade(String cidade) { this.cidade = cidade; }
+	 * 
+	 * public String getEstado() { return estado; }
+	 * 
+	 * public void setEstado(String estado) { this.estado = estado; }
+	 */
 }
